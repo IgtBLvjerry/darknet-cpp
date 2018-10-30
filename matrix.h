@@ -5,12 +5,14 @@
 #ifndef DARKNET_CPP_MATRIX_H
 #define DARKNET_CPP_MATRIX_H
 
+#include <vector>
 
 class matrix {
 
 public:
     int rows, cols;
     float **vals;
+    std::vector<std::vector<float >> v_vals;
 
     matrix make_matrix(int rows, int cols);
 
@@ -24,7 +26,7 @@ public:
 
     matrix hold_out_matrix(matrix *m, int n);
 
-    float matrix_topk_acurracy(matrix truth, matrix guess, int k);
+    float matrix_topk_accuracy(matrix truth, matrix guess, int k);
 
     void matrix_add_matrix(matrix from, matrix to);
 
