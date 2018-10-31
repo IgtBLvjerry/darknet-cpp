@@ -14,8 +14,8 @@ list *list::make_list() {
     return l;
 }
 // insert node
-template <class T>
-void list::list_insert(list *l, T *val) {
+template <typename T>
+void list::list_insert(list *l, T val) {
     node *newNode = new node();
     newNode->val = val;
     newNode->next = 0;

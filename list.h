@@ -17,7 +17,7 @@ public:
 
 
 };
-
+template <typename T>
 class list {
 public:
 //    列表的节点数
@@ -31,7 +31,7 @@ public:
 
     int list_find(list *l, void *val);
 
-    void list_insert(list *, void *);
+    void list_insert(list *, T);
 
     void **list_to_array(list *l);
 
