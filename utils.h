@@ -6,7 +6,7 @@
 #define DARKNET_CPP_UTILS_H
 
 #include "list.h"
-
+#include <time.h>
 class utils {
 public:
     double what_time_is_it_now();
