@@ -10,7 +10,9 @@
 class matrix {
 
 public:
+//    行数、列数
     int rows, cols;
+//    指向矩阵的指针
     float **vals;
     std::vector<std::vector<float >> v_vals;
 
