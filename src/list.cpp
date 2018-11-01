@@ -16,7 +16,7 @@ list *list::make_list() {
 // insert node.
 // void list_insert(list *, void *);
 
-void list::list_insert(list *l, void* val) {
+void list::list_insert(list *l, void *val) {
     node *newNode = new node();
     newNode->val = val;
     newNode->next = 0;
@@ -70,6 +70,17 @@ void list::free_list_contents(list *l) {
     }
 }
 
-void** list::list_to_array(list *l) {
+void **list::list_to_array(list *l) {
+
+    void **array = new void *[l->size];
+
+    node *n = l->front;
+    int count = 0;
+    while (n) {
+        array[count++] = n->val;
+        n = n->next;
+    }
+
+    return array;
 
 }

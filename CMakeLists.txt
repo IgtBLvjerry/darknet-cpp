@@ -3,4 +3,4 @@ project(darknet_cpp)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(darknet_cpp main.cpp darknet-cpp.cpp tree.cpp tree.h list.cpp list.h option_list.cpp option_list.h utils.cpp utils.h data.cpp data.h matrix.cpp matrix.h unistd.h gettimeofday.h gettimeofday.c)
+add_executable(darknet_cpp main.cpp src/darknet-cpp.cpp src/tree.cpp src/tree.h src/list.cpp src/list.h src/option_list.cpp src/option_list.h src/utils.cpp src/utils.h src/data.cpp src/data.h src/matrix.cpp src/matrix.h src/unistd.h src/gettimeofday.h src/gettimeofday.c include/darknet.h)
